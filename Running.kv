@@ -1,0 +1,116 @@
+PageLayoutExample:
+<PageLayoutExample>:
+    MainWidget:
+    BoxLayoutExample:
+    AnchorLayoutExample:
+    GridLayoutExample
+    
+    
+
+
+
+<ScrollViewExample>:
+    StackLayoutExample:
+        size_hint:1,None
+        height:self.minimum_height
+    #padding:("20dp","20dp","20dp","20dp")
+    #spacing:"20dp","20dp"
+    #left-right top to buttom 
+    #orientation:"lr-bt"
+#     # Button:
+    #     text:"stb1"
+    #     size_hint:.2,.2
+    # Button:
+    #     text:"stb2"
+    #     size_hint:.2,.2
+    # Button:
+    #     text:"stb3"
+    #     size_hint:.2,.2
+    # Button:
+    #     text:"stb4"
+    #     size_hint:.2,.2
+    # Button:
+    #     text:"stb5"
+    #     size_hint:.2,.2
+
+<GridLayoutExample@GridLayout>
+     #rows
+    # rows:2
+    # cols :3
+     #columns
+    Button:
+        text:"a"
+        size_hint:None,1
+        width:"60dp"
+    BoxLayoutExample:
+        
+    # Button:
+    #     text:"b"
+    Button:
+        text:"c"
+    Button:
+        text:"d"
+        size_hint:None,1
+        width:"60dp"
+    Button:
+        text:"e"
+    Button:
+        text:"f"
+    
+    
+
+
+<AnchorLayoutExample>:
+    #right,left,center
+    anchor_x:"center"
+    #buttom, top , center
+    anchor_y:"top"
+    
+    BoxLayout:
+        size_hint:.2,.2
+        Button:
+            text:"b1"
+        Button:
+            text:"b2"
+    
+   
+
+    
+
+
+
+
+<BoxLayoutExample>:
+    orientation:"horizontal"
+    Button:
+        text:'b11'
+        size_hint:.5,None
+        #pos_hint:{"right":.6}
+        pos_hint:{"center_x":.5}
+    BoxLayout:
+        orientation:"vertical"
+        spacing:"10dp"
+        Button:
+            text:"Bx11"
+        Button:
+            text:"bx21"
+
+    # Button:
+    #     text:"b12"
+    Button:
+        text:"b13"
+    
+    
+
+<MainWidget>:
+    Button:
+        text:"Hello"
+        size:"100dp","80dp"
+        pos:"100dp","200dp"
+    Button:
+        text:"Hello2"
+        size:"100dp","80dp"
+        pos:"200dp","300dp"
+
+
+        
